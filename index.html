@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio Japonês</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo do Restaurante">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Cardápio</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>CARDÁPIO</h1>
+
+        <div class="cardapio">
+            <div class="prato">
+                <img src="Niguiri-de-salmao.jpg" alt="Niguiri de Salmão" class="prato-imagem">
+                <h2>Niguiri de Salmão</h2>
+                <p>Uma fatia de salmão fresco sobre um bolinho de arroz temperado.</p>
+                <button onclick="lerDescricao('Uma fatia de salmão fresco sobre um bolinho de arroz temperado')">Ouvir descrição</button>
+                <button onclick="aumentarImagem('Niguiri-de-salmao.jpg')">Aumentar imagem</button>
+            </div>
+            <div class="prato">
+                <img src="temaki.jpg" alt="Temaki de Salmão" class="prato-imagem">
+                <h2>Temaki de Salmão</h2>
+                <p>Cones de alga recheados com arroz e salmão fresco, acompanhados de cebolinha e gergelim.</p>
+                <button onclick="lerDescricao('Cones de alga recheados com arroz e salmão fresco, acompanhados de cebolinha e gergelim')">Ouvir descrição</button>
+                <button onclick="aumentarImagem('temaki.jpg')">Aumentar imagem</button>
+            </div>
+            <div class="prato">
+                <img src="uramaki.jpg" alt="Uramaki Califórnia" class="prato-imagem">
+                <h2>Uramaki Califórnia</h2>
+                <p>Arroz por fora com recheio de kani, pepino, manga e cream cheese, enrolado em alga.</p>
+                <button onclick="lerDescricao('Arroz por fora com recheio de kani, pepino, manga e cream cheese, enrolado em alga')">Ouvir descrição</button>
+                <button onclick="aumentarImagem('uramaki.jpg')">Aumentar imagem</button>
+            </div>
+            <div class="prato">
+                <img src="sashimi salmão.jpg" alt="Sashimi de Salmão" class="prato-imagem">
+                <h2>Sashimi de Salmão</h2>
+                <p>Fatias finas de salmão cru, servidas com molho de soja e wasabi.</p>
+                <button onclick="lerDescricao('Fatias finas de salmão cru, servidas com molho de soja e wasabi')">Ouvir descrição</button>
+                <button onclick="aumentarImagem('sashimi salmão.jpg')">Aumentar imagem</button>
+            </div>
+            <div class="prato">
+                <img src="yakisoba.jpg" alt="Yakisoba" class="prato-imagem">
+                <h2>Yakisoba</h2>
+                <p>Macarrão salteado com vegetais e carne, coberto com molho oriental.</p>
+                <button onclick="lerDescricao('Macarrão salteado com vegetais e carne, coberto com molho oriental')">Ouvir descrição</button>
+                <button onclick="aumentarImagem('yakisoba.jpg')">Aumentar imagem</button>
+            </div>
+            <div class="prato">
+                <img src="DragonRoll-FEATURE.jpg" alt="Sushi Dragon Roll" class="prato-imagem">
+                <h2>Sushi Dragon Roll</h2>
+                <p>Enrolado de sushi com camarão empanado, abacate e molho especial.</p>
+                <button onclick="lerDescricao('Enrolado de sushi com camarão empanado, abacate e molho especial')">Ouvir descrição</button>
+                <button onclick="aumentarImagem('DragonRoll-FEATURE.jpg')">Aumentar imagem</button>
+            </div>
+            <div class="prato">
+                <img src="tempura-de-camarao-2.jpeg" alt="Tempurá de Camarão" class="prato-imagem">
+                <h2>Tempurá de Camarão</h2>
+                <p>Camarões empanados em uma massa crocante e levemente fritos.</p>
+                <button onclick="lerDescricao('Camarões empanados em uma massa crocante e levemente fritos')">Ouvir descrição</button>
+                <button onclick="aumentarImagem('tempura-de-camarao-2.jpeg')">Aumentar imagem</button>
+            </div>
+            <div class="prato">
+                <img src="missoschiero.webp" alt="Missoshiro" class="prato-imagem">
+                <h2>Missoshiro</h2>
+                <p>Sopa de missô tradicional japonesa, com tofu e cebolinha.</p>
+                <button onclick="lerDescricao('Sopa de missô tradicional japonesa, com tofu e cebolinha')">Ouvir descrição</button>
+                <button onclick="aumentarImagem('missoschiero.webp')">Aumentar imagem</button>
+            </div>
+            <div class="prato">
+                <img src="hot-roll-de-salmao-2.jpeg" alt="Hot Roll" class="prato-imagem">
+                <h2>Hot Roll</h2>
+                <p>Sushi empanado e frito, recheado com salmão e cream cheese.</p>
+                <button onclick="lerDescricao('Sushi empanado e frito, recheado com salmão e cream cheese')">Ouvir descrição</button>
+                <button onclick="aumentarImagem('hot-roll-de-salmao-2.jpeg')">Aumentar imagem</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal para exibir a imagem em tamanho maior -->
+    <div id="imagem-modal" class="modal">
+        <span class="close" onclick="fecharModal()">&times;</span>
+        <img class="modal-conteudo" id="img01">
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
